@@ -1,0 +1,8 @@
+estreia:
+  name: estreia
+  description: False
+  cover: False
+eventos-anteriores:
+  name: eventos-anteriores
+  description: False
+  cover: False
