@@ -5,6 +5,13 @@ class: 'home-template'
 navigation: True
 ---
 
+<!-- The big featured header, it uses blog cover image as a BG if available -->
+<header class="site-header outer {% if page.cover or site.cover %}" style="background-image:  url({{ site.baseurl }}{% if page.cover %}{{ page.cover }}{% elsif site.cover %}{{ site.cover }}{% endif %}) {% else %}no-cover{% endif %}">
+    <div class="inner">
+        {% include site-nav.html %}
+    </div>
+</header>
+
 
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
